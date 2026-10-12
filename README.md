@@ -19,11 +19,13 @@ unzip it into `World of Warcraft/_retail_/Interface/AddOns/` so the folder is
 - `/mvp show` opens the rankings window: an MVP card, a class-coloured score bar
   per player, awards, and saved runs. Hover a row to see how its score was built.
 - `/mvp history [n]` lists your last 10 keys, or prints run *n*.
-- `/mvp explain` prints the score math for every player. It is always local.
+- `/mvp explain [n]` prints the score math for every player, for the live meter or
+  for saved run *n*, so it still works after the next key has reset the meter. It is
+  always local.
 - `/mvp settings` shows the toggles; `auto`, `autoparty`, `awards` and
   `autoreset` each flip with `/mvp <name>` (or add `on` / `off`).
-- `/mvp debug` prints what the damage meter is returning, and who else in the
-  group runs Mvp. It is always local.
+- `/mvp debug` prints the addon version, what the damage meter is returning, and
+  who else in the group runs Mvp. It is always local.
 
 Things worth knowing:
 
@@ -44,9 +46,11 @@ Things worth knowing:
    *Bug report*, *Scoring looks wrong*, or *Suggestion*.
 3. Include, as far as you can:
    - what you expected and what happened instead
-   - the addon version (shown in the AddOns list on the character-select screen)
+   - the addon version (the top of `/mvp debug`, or the AddOns list on the
+     character-select screen)
    - the dungeon and key level, if it happened in a key
-   - for a scoring complaint, the output of `/mvp explain` right after the run
+   - for a scoring complaint, the output of `/mvp explain`, or `/mvp explain 1` for
+     your most recent saved run
    - for missing or "n/a" data, the output of `/mvp debug`
    - any Lua error text (an addon such as BugSack makes these easy to copy)
    - a screenshot, if it is a display problem

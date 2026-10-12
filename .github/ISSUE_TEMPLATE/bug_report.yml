@@ -12,7 +12,7 @@ body:
     id: version
     attributes:
       label: Addon version
-      description: Shown in the AddOns list on the character-select screen.
+      description: Shown at the top of /mvp debug, and in the AddOns list on the character-select screen.
     validations:
       required: true
   - type: input

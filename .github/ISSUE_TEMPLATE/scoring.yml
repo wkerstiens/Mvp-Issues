@@ -13,7 +13,7 @@ body:
     id: explain
     attributes:
       label: "/mvp explain output"
-      description: Run it right after the key, before anything else resets the meter. Remove any character names you would rather not share.
+      description: Run /mvp explain right after the key, or /mvp explain 1 for your most recent saved run (that still works after the meter has reset). Remove any character names you would rather not share.
       render: text
     validations:
       required: true
@@ -21,7 +21,7 @@ body:
     id: version
     attributes:
       label: Addon version
-      description: Shown in the AddOns list on the character-select screen.
+      description: Shown at the top of /mvp explain and /mvp debug, and in the AddOns list on the character-select screen.
     validations:
       required: true
   - type: input
