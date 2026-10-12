@@ -1,0 +1,47 @@
+name: Bug report
+description: Something is wrong or broken
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Addon version
+      description: Shown in the AddOns list on the character-select screen.
+    validations:
+      required: true
+  - type: input
+    id: context
+    attributes:
+      label: Dungeon and key level
+      description: Leave blank if it did not happen in a key.
+  - type: dropdown
+    id: others
+    attributes:
+      label: Does anyone else in the group run Mvp?
+      description: Matters for duplicate or missing recaps in group chat.
+      options:
+        - "No, just me"
+        - "Yes"
+        - "Not sure"
+  - type: textarea
+    id: debug
+    attributes:
+      label: "/mvp debug output"
+      description: Useful for "Unknown", "n/a" or missing data. Remove any character names you would rather not share.
+      render: text
+  - type: textarea
+    id: error
+    attributes:
+      label: Lua error text
+      description: If there was an error popup, paste it here.
+      render: text
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or anything else
