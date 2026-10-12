@@ -36,8 +36,9 @@ Things worth knowing:
   Mvp waits and retries, and shows a one-line message instead of a recap full of
   "Unknown". Run `/mvp report` again once the key or combat has ended.
 - Scores are judged within a role (damage against other damage dealers, healing
-  against other healers). A lone healer or tank has nobody to be compared with in
-  some categories, so those are left out rather than handed out as free points.
+  against other healers). A lone healer has nobody to be compared with for healing
+  or dispels, so those are left out rather than handed out as free points. A tank's
+  damage counts at half weight against the top damage dealer's.
 
 ## Posting an issue
 
